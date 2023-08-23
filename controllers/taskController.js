@@ -6,21 +6,19 @@ oauth2.accessToken = process.env.asana_pat;
 const tasksApiInstance = new Asana.TasksApi();
 
 exports.createTask = (req, res) => {
+  let asana_project_gid = process.env.asana_project_gid;
+
   const taskData = {
-    name: "New Task",
+    name: "Bug Task",
+    resource_subtype: "default_task",
     approval_status: "pending",
     assignee_status: "upcoming",
     completed: false,
-    external: {
-      gid: "1234",
-      data: "A blob of information.",
-    },
     html_notes:
       "<body>Mittens <em>really</em> likes the stuff from Humboldt.</body>",
-    is_rendered_as_separator: false,
+    notes: "Hello, world!",
     liked: true,
-    assignee: "me",
-    projects: ["<YOUR_PROJECT_GID>"],
+    projects: [`${asana_project_gid}`],
   };
 
   const body = new Asana.TasksBody.constructFromObject({ data: taskData });
