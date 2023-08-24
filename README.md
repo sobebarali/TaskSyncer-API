@@ -19,8 +19,8 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/webhook-event-processor.git
-cd webhook-event-processor
+git clone https://github.com/sobebarali/asana-airtable-integration.git
+cd asana-airtable-integration
 ```
 
 2. Configure Environment Variables:
