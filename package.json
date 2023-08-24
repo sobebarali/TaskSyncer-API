@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "airtable": "^0.12.2",
     "asana": "^2.0.3",
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
