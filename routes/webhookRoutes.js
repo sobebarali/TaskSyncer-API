@@ -1,8 +1,8 @@
 const express = require("express");
-const taskController = require("../controllers/taskController");
+const webhookController = require("../controllers/webhookController");
 
 const router = express.Router();
 
-router.post("/createTask", taskController.createTask);
+router.post("/receiveWebhook", webhookController.receiveWebhook);
 
 module.exports = router;
