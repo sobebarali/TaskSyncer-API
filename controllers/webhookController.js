@@ -32,10 +32,13 @@ exports.receiveWebhook = (req, res) => {
       res.sendStatus(200);
       console.log(`Events on ${Date()}:`);
       const events = req.body.events;
+
+      console.log(events);
       for (const event of events) {
         if (
-          event.action === "added" &&
-          event.resource.resource_type === "task"
+          event.action === "added" 
+          && event.parent.resource_type === "section"
+          && event.resource.resource_type === "task"
         ) {
           const task_gid = event.resource.gid;
           getTask(task_gid, asana_pat)
