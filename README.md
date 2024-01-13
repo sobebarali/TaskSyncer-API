@@ -1,5 +1,7 @@
 # asana-airtable-integration
 
+- This Node.js application seamlessly integrates Asana and Airtable, automating the process of copying newly created tasks from Asana to an Airtable table. The app utilizes ngrok to receive webhook events, enabling a streamlined workflow for project management and data organization, perfect for a marketing agency.
+
 ## Features
 
 - Verifies the authenticity of incoming webhook events using HMAC signatures.
