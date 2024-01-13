@@ -21,8 +21,8 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/sobebarali/asana-airtable-integration.git
-cd asana-airtable-integration
+git clone https://github.com/sobebarali/TaskSyncer-API.git
+cd TaskSyncer-API
 ```
 
 2. Configure Environment Variables:
